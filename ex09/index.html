@@ -4,39 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-Fonte</h2>
-    <p>O <code>comando console.log('teste')</code> é usado na linguagem Js</p>
-    <!--Tag<code> Para deixar a largura das letras iguais, facilitando a visualização. -->
-        <pre>
-            <code>
-num = int(input('Digite um número'))
-if num % 2 ==0:
-print('O número {num} é PAR')
-else:
-print('O número {num} é IMPAR')
-print('Fim do programa')
-            </code>
-        </pre>
+    <h1>Trabalhando com Listas</h1>
+    <h2> Listas Ordenadas</h2>
+    <ol>
+        <li>Tomar café</li>
+        <li>tomar banho</li>
+        <li>Escovar os dentes</li> <!--Lista que numera automaticamente-->
+        <li>Estudar</li> <!--Então se eu adicionar algo,ele renumera tudo-->
+    </ol>
+        <h2>Tipo de listas ordenadas</h2>
+        <h3>Tipo "A"</h3>
+        <ol type="A"> <!--Letra maiúscula ex: A. B.  etc-->
+            <li>Tomar café</li>
+            <li>tomar banho</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li> 
+        </ol>
 
-        <h2>Citações simples</h2>
-        <p>Como diria o meu pai: <q>O computador é um burro muito rápido</q></p>
-        <!--TAg para colocar aspas-->
-        <h2>Citações completas</h2>
-        <p>Segundo Microsoft:</p>
-        <blockquote cite="https://www.google.com.br/books/edition/O_Guia_Completo_do_Minecraft/uQ03CgAAQBAJ?hl=pt-BR&gbpv=0"> <!--link da citação-->
-            A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML nesse capítulo descrevem os blocos de texto. 
-        </blockquote>
+        <h3>Tipo "a'</h3>
+        <ol type="a"> <!--Letra minúcula ex: a. b.  etc-->
+            <li>Tomar café</li>
+            <li>tomar banho</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li> 
+        </ol>
 
-        <h2>Abreviações</h2>
-        <p>Estou estudando <abbr title="HypeText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p> <!--Tag <abbr> Mostra o significado da abreviação-->
+        <h3>Tipo "1"</h3>
+        <ol type="1" start="6"> <!--pode começar de qualquer número-->
+            <li>Tomar café</li>
+            <li>tomar banho</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li> 
+        </ol>
 
-            <h2>Texto invertido</h2>
-            <p> <bdo dir="rtl">Leia de cabeça para baixo</bdo> </p> <!--Colocar o texto invertido kkkkk-->
+        <h3>Tipo "I"</h3>
+        <ol type="I"> <!--Letra romana maiúscula ex:I. II. etc-->
+            <li>Tomar café</li>
+            <li>tomar banho</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li> 
+        </ol>
 
+        <h3>Tipo"i"</h3>
+        <ol type="i"> <!--Letra minúcula ex: i. ii. etc-->
+            <li>Tomar café</li>
+            <li>tomar banho</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li> 
+        </ol>
 
+        <h2>Lista não ordenadas</h2>
+        <ul>
+            <li>Andar de bicicleta</li>
+            <li>Estudar</li>
+            <li>Ler um livro</li>
+        </ul>
+
+        <h2>Tipo de listas não ordenadas</h2>
+        <h3>Tipo"disc"</h3>
+        <ul type="disc">
+                <li>Tomar café</li>
+                <li>tomar banho</li>
+                <li>Escovar os dentes</li>
+                <li>Estudar</li> 
+        </ul>
+
+        <h3>Tipo"circle"</h3>
+        <ul type="circle">
+            <li>Tomar café</li>
+            <li>tomar banho</li>
+            <li>Escovar os dentes</li>
+            <li>Estudar</li> 
+
+        <h3>Tipo"square"</h3>
+            <ul type="square">
+                <li>Tomar café</li>
+                <li>tomar banho</li>
+                <li>Escovar os dentes</li>
+                <li>Estudar</li> 
+        </ul>
+    </ul>
+
+    <h2>Aninhamento de listas</h2>
+    <h3>linguagens</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Visual Basic</li>
+            <li>Clipper</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="A" start="3">
+            <li>Python</li>
+            <li>Js</li>
+            <li>PHP</li>
+        </ol>
+
+        <h2>Meus jogos favoritos</h2> <!--Misturando OL com UL-->
+         <ul type="disc">
+            <li>XBOX</li>
+            <ol> type="disc"
+                <li>Assins Creed</li>
+                <li>God Of War</li>
+            </ol>
+            <li>MegaDrive</li>
+            <ol>
+                <li>Bloquinho</li>
+                <li>Kart</li>
+            </ol>
+            <li>PS5</li>
+            <ol type="a">
+                <li>Army of Two</li>
+                <ol type="I">
+                    <li>Fase1</li>
+                    <ul type="circle">
+                        <liu>Dificil</liu>
+                    </ul>
+                        <li>Fase2</li>
+                        <ul type="circle">
+                            <li>Fácil</li>
+                        </ul>
+                </ol>
+                <li>Call Od Dutty</li>
+
+                <h2>Lista de Definição</h2>
+                <dl>
+                    <dt>Bola</dt> <!--<dt>Termo</dt>-->
+                    <dd>Redonda e azul</dd> <!--<dd>Descrição</dd>-->
+
+                </dl>
 </body>
 </html>
